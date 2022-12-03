@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CDCD505293A882F00EFB94A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD504293A882F00EFB94A /* AppDelegate.swift */; };
+		0CDCD507293A882F00EFB94A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD506293A882F00EFB94A /* SceneDelegate.swift */; };
+		0CDCD509293A882F00EFB94A /* Tela01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD508293A882F00EFB94A /* Tela01.swift */; };
+		0CDCD50C293A882F00EFB94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCD50A293A882F00EFB94A /* Main.storyboard */; };
+		0CDCD50E293A883100EFB94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCD50D293A883100EFB94A /* Assets.xcassets */; };
+		0CDCD511293A883100EFB94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCD50F293A883100EFB94A /* LaunchScreen.storyboard */; };
+		0CDCD519293A8A9500EFB94A /* Tela02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD518293A8A9500EFB94A /* Tela02.swift */; };
+		0CDCD51B293A8ACF00EFB94A /* Tela03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD51A293A8ACF00EFB94A /* Tela03.swift */; };
+		0CDCD51D293A8AFE00EFB94A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD51C293A8AFE00EFB94A /* TabBarController.swift */; };
+		0CDCD520293AA01600EFB94A /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD51F293AA01600EFB94A /* PhotoModel.swift */; };
+		0CDCD524293AA09400EFB94A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD522293AA09400EFB94A /* PhotoCell.swift */; };
+		0CDCD525293AA09400EFB94A /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDCD523293AA09400EFB94A /* PhotoCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CDCD501293A882F00EFB94A /* DesafioTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDCD504293A882F00EFB94A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CDCD506293A882F00EFB94A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CDCD508293A882F00EFB94A /* Tela01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela01.swift; sourceTree = "<group>"; };
+		0CDCD50B293A882F00EFB94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CDCD50D293A883100EFB94A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CDCD510293A883100EFB94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CDCD512293A883100EFB94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CDCD518293A8A9500EFB94A /* Tela02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02.swift; sourceTree = "<group>"; };
+		0CDCD51A293A8ACF00EFB94A /* Tela03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03.swift; sourceTree = "<group>"; };
+		0CDCD51C293A8AFE00EFB94A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0CDCD51F293AA01600EFB94A /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		0CDCD522293AA09400EFB94A /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		0CDCD523293AA09400EFB94A /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CDCD4FE293A882F00EFB94A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CDCD4F8293A882F00EFB94A = {
+			isa = PBXGroup;
+			children = (
+				0CDCD503293A882F00EFB94A /* DesafioTabBar */,
+				0CDCD502293A882F00EFB94A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CDCD502293A882F00EFB94A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD501293A882F00EFB94A /* DesafioTabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CDCD503293A882F00EFB94A /* DesafioTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD521293AA06800EFB94A /* PhotoCell */,
+				0CDCD51E293AA00400EFB94A /* Model */,
+				0CDCD504293A882F00EFB94A /* AppDelegate.swift */,
+				0CDCD506293A882F00EFB94A /* SceneDelegate.swift */,
+				0CDCD508293A882F00EFB94A /* Tela01.swift */,
+				0CDCD518293A8A9500EFB94A /* Tela02.swift */,
+				0CDCD51A293A8ACF00EFB94A /* Tela03.swift */,
+				0CDCD51C293A8AFE00EFB94A /* TabBarController.swift */,
+				0CDCD50A293A882F00EFB94A /* Main.storyboard */,
+				0CDCD50D293A883100EFB94A /* Assets.xcassets */,
+				0CDCD50F293A883100EFB94A /* LaunchScreen.storyboard */,
+				0CDCD512293A883100EFB94A /* Info.plist */,
+			);
+			path = DesafioTabBar;
+			sourceTree = "<group>";
+		};
+		0CDCD51E293AA00400EFB94A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD51F293AA01600EFB94A /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CDCD521293AA06800EFB94A /* PhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CDCD522293AA09400EFB94A /* PhotoCell.swift */,
+				0CDCD523293AA09400EFB94A /* PhotoCell.xib */,
+			);
+			path = PhotoCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CDCD500293A882F00EFB94A /* DesafioTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CDCD515293A883100EFB94A /* Build configuration list for PBXNativeTarget "DesafioTabBar" */;
+			buildPhases = (
+				0CDCD4FD293A882F00EFB94A /* Sources */,
+				0CDCD4FE293A882F00EFB94A /* Frameworks */,
+				0CDCD4FF293A882F00EFB94A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioTabBar;
+			productName = DesafioTabBar;
+			productReference = 0CDCD501293A882F00EFB94A /* DesafioTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CDCD4F9293A882F00EFB94A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					0CDCD500293A882F00EFB94A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 0CDCD4FC293A882F00EFB94A /* Build configuration list for PBXProject "DesafioTabBar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CDCD4F8293A882F00EFB94A;
+			productRefGroup = 0CDCD502293A882F00EFB94A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CDCD500293A882F00EFB94A /* DesafioTabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CDCD4FF293A882F00EFB94A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDCD525293AA09400EFB94A /* PhotoCell.xib in Resources */,
+				0CDCD511293A883100EFB94A /* LaunchScreen.storyboard in Resources */,
+				0CDCD50E293A883100EFB94A /* Assets.xcassets in Resources */,
+				0CDCD50C293A882F00EFB94A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CDCD4FD293A882F00EFB94A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDCD509293A882F00EFB94A /* Tela01.swift in Sources */,
+				0CDCD505293A882F00EFB94A /* AppDelegate.swift in Sources */,
+				0CDCD507293A882F00EFB94A /* SceneDelegate.swift in Sources */,
+				0CDCD51D293A8AFE00EFB94A /* TabBarController.swift in Sources */,
+				0CDCD524293AA09400EFB94A /* PhotoCell.swift in Sources */,
+				0CDCD520293AA01600EFB94A /* PhotoModel.swift in Sources */,
+				0CDCD519293A8A9500EFB94A /* Tela02.swift in Sources */,
+				0CDCD51B293A8ACF00EFB94A /* Tela03.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CDCD50A293A882F00EFB94A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CDCD50B293A882F00EFB94A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CDCD50F293A883100EFB94A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CDCD510293A883100EFB94A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CDCD513293A883100EFB94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CDCD514293A883100EFB94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CDCD516293A883100EFB94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioTabBar/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "we need to access your photos ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.DesafioTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CDCD517293A883100EFB94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioTabBar/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "we need to access your photos ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.DesafioTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CDCD4FC293A882F00EFB94A /* Build configuration list for PBXProject "DesafioTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDCD513293A883100EFB94A /* Debug */,
+				0CDCD514293A883100EFB94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CDCD515293A883100EFB94A /* Build configuration list for PBXNativeTarget "DesafioTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CDCD516293A883100EFB94A /* Debug */,
+				0CDCD517293A883100EFB94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CDCD4F9293A882F00EFB94A /* Project object */;
+}
