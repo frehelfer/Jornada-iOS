@@ -21,37 +21,59 @@ class Tela01: UIViewController {
     
     var photos: [PhotoModel] = []
     var photo: UIImage? = nil
+    let imagePicker = UIImagePickerController()
+    var alert: AlertController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configView()
         tableViewConfig()
+        alert = AlertController(controller: self)
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = false
     }
     
     @IBAction func tappedSelectPhotoButton(_ sender: UIButton) {
-        let vc = UIImagePickerController()
-        vc.sourceType = .photoLibrary
-        vc.delegate = self
-        vc.allowsEditing = true
-        present(vc, animated: true)
+        
+        self.alert?.chooseImage(completion: { option in
+            switch option {
+            case .camera:
+                if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                    self.imagePicker.sourceType = .camera
+                } else {
+                    self.imagePicker.sourceType = .photoLibrary
+                }
+                self.present(self.imagePicker, animated: true)
+            case .library:
+                self.imagePicker.sourceType = .photoLibrary
+                self.present(self.imagePicker, animated: true)
+            case .cancel:
+                break
+            }
+        })
+        
     }
     
     
     @IBAction func tappedAddPhotoButton(_ sender: UIButton) {
         guard
             let image = photo,
-            photoNameTextField.text != "",
             let imageName = photoNameTextField.text else {
         return }
         
-        photos.append(PhotoModel(image: image, name: imageName))
+        if imageName == "" {
+            self.alert?.alertInformation(title: "Atenção", message: "Por favor, informe o nome!")
+        } else {
+            photos.append(PhotoModel(image: image, name: imageName))
+            
+            photo = nil
+            selectedImageView.image = UIImage(systemName: "person.circle")
+            photoNameTextField.text = ""
+            
+            photosTableView.reloadData()
+        }
         
-        photo = nil
-        selectedImageView.image = UIImage(systemName: "person.circle")
-        photoNameTextField.text = ""
-        
-        photosTableView.reloadData()
     }
     
     
@@ -60,9 +82,15 @@ class Tela01: UIViewController {
         
         selectedImageView.image = UIImage(systemName: "person.circle")
         selectedImageView.tintColor = .black
+        selectedImageView.layer.cornerRadius = selectedImageView.frame.height / 2
+        selectedImageView.contentMode = .scaleAspectFill
+        
         photoNameLabel.text = "Nome"
+        
         photoNameTextField.placeholder = "Digite um nome para a foto."
+        
         selectPhotoButton.titleLabel?.text = "Editar Foto"
+        
         addPhotoButton.titleLabel?.text = "Adicionar"
     }
 
@@ -94,7 +122,7 @@ extension Tela01: UITableViewDelegate, UITableViewDataSource {
 
 extension Tela01: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.editedImage] as? UIImage else { return }
+        guard let image = info[.originalImage] as? UIImage else { return }
         selectedImageView.image = image
         photo = image
         dismiss(animated: true)

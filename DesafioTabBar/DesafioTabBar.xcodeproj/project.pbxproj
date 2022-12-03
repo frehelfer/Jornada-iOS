@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7797B4293BC7940058D318 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7797B3293BC7940058D318 /* AlertController.swift */; };
 		0CDCD505293A882F00EFB94A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD504293A882F00EFB94A /* AppDelegate.swift */; };
 		0CDCD507293A882F00EFB94A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD506293A882F00EFB94A /* SceneDelegate.swift */; };
 		0CDCD509293A882F00EFB94A /* Tela01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD508293A882F00EFB94A /* Tela01.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7797B3293BC7940058D318 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		0CDCD501293A882F00EFB94A /* DesafioTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDCD504293A882F00EFB94A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CDCD506293A882F00EFB94A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C7797B2293BC77D0058D318 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				0C7797B3293BC7940058D318 /* AlertController.swift */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
 		0CDCD4F8293A882F00EFB94A = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		0CDCD503293A882F00EFB94A /* DesafioTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				0C7797B2293BC77D0058D318 /* AlertController */,
 				0CDCD521293AA06800EFB94A /* PhotoCell */,
 				0CDCD51E293AA00400EFB94A /* Model */,
 				0CDCD504293A882F00EFB94A /* AppDelegate.swift */,
@@ -174,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CDCD509293A882F00EFB94A /* Tela01.swift in Sources */,
+				0C7797B4293BC7940058D318 /* AlertController.swift in Sources */,
 				0CDCD505293A882F00EFB94A /* AppDelegate.swift in Sources */,
 				0CDCD507293A882F00EFB94A /* SceneDelegate.swift in Sources */,
 				0CDCD51D293A8AFE00EFB94A /* TabBarController.swift in Sources */,
@@ -327,8 +339,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T68CB4R9H5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DesafioTabBar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "we need to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "we need to access your photos ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -341,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fre.DesafioTabBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,8 +370,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T68CB4R9H5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DesafioTabBar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "we need to access your camera";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "we need to access your photos ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -370,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fre.DesafioTabBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fre.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
